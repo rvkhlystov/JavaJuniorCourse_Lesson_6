@@ -1,13 +1,11 @@
 package ru.sbrf.lesson_6.Action;
 
-public class Move {
-    private int speed;
-    private int rateAnimal;
-
-    public void walk (int rateAnimal) {
-        this.speed = rateAnimal;
+//интерфейс реализует возможность гулять и бежать
+public interface Move {
+    public default void walk () {
+        System.out.println("Я иду");
     }
-    public void run (int rateAnimal) {
-        this.speed *= rateAnimal;
+    public default void run () {
+        System.out.println("Я бегу");
     }
 }

@@ -1,14 +1,23 @@
 package ru.sbrf.lesson_6.Animal;
 
-import ru.sbrf.lesson_6.Action.Eating;
-import ru.sbrf.lesson_6.Action.Move;
-import ru.sbrf.lesson_6.Action.Sound;
-import ru.sbrf.lesson_6.Action.Swimming;
+import ru.sbrf.lesson_6.Action.*;
 
-public class Dog {
-    private Eating eating;
-    private Move move;
-    private Sound sound;
-    private Swimming swimming;
+public class Dog implements Sound, Move, Eating, Swimming {
+
+    String name;
+    public Dog(String name){
+        this.name = name;
+    }
+
+
+
+    public void say() {
+        System.out.println("Я собакин " + name + ". Гав!");
+    }
+
+    public void swim() {
+        System.out.println("Я плаваю по собачьи");
+    }
+
 
 }

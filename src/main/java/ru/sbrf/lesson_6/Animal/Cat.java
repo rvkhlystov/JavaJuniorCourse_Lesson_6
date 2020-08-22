@@ -5,32 +5,15 @@ import ru.sbrf.lesson_6.Action.Eating;
 import ru.sbrf.lesson_6.Action.Move;
 import ru.sbrf.lesson_6.Action.Sound;
 
-public class Cat {
-    private String name;
-    private ClimbingTrees climbingTrees;
-    private Eating eating;
-    private Move move;
-    private Sound sound;
+public class Cat implements Sound, Move, Eating, ClimbingTrees {
 
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    String name;
+    public Cat(String name) {
         this.name = name;
     }
 
-        public Sound getSound() {
-        return sound;
+    public void say() {
+        System.out.println("Я котэ " + name + ". Мяу!");
     }
 
-//    public void setSound(Sound sound) throws NullPointerException{
-//        this.sound = sound;
-//    }
-
-    String meow = sound.setSound("Мяу");
-
-    //String meow = sound.setSound("Мяу!");
 }

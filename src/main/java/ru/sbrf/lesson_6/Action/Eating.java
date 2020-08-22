@@ -1,12 +1,11 @@
 package ru.sbrf.lesson_6.Action;
 
-//возможность задать размер порции еды в кг на прием пищи
-public class Eating {
-    private float foodServing = 1;
-    private float rateFoodServing;
-
-    public void eat(float rateFoodServing) {
-        this.foodServing *= rateFoodServing;
+//интерфейс реализует возможность жевать и глотать
+public interface Eating {
+    public default void chew() {
+        System.out.println("Я прожевал еду");
     }
-
+    public default void ingest(){
+        System.out.println("Я проглотил еду");
+    }
 }
