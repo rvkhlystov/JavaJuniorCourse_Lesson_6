@@ -1,6 +1,6 @@
-package ru.sbrf.lesson_6.Action;
+package ru.sbrf.lesson6.Action;
 
 //интерфейс реализует возможность произносить звуки
 public interface Sound {
-    public void say();
+    void say();
 }

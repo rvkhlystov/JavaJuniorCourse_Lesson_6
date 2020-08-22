@@ -1,6 +1,6 @@
-package ru.sbrf.lesson_6.Animal;
+package ru.sbrf.lesson6.Animal;
 
-import ru.sbrf.lesson_6.Action.*;
+import ru.sbrf.lesson6.Action.*;
 
 public class Dog implements Sound, Move, Eating, Swimming {
 

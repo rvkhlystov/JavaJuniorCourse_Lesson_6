@@ -1,10 +1,10 @@
-package ru.sbrf.lesson_6;
+package ru.sbrf.lesson6;
 
-import ru.sbrf.lesson_6.Animal.Cat;
-import ru.sbrf.lesson_6.Animal.Dog;
+import ru.sbrf.lesson6.Animal.Cat;
+import ru.sbrf.lesson6.Animal.Dog;
 
 public class Main {
-    public static void main(String[] args) throws NullPointerException {
+    public static void main(String[] args) {
         Cat vaska = new Cat("Васька");
         vaska.say();
         vaska.chew();

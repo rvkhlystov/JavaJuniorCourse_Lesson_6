@@ -1,8 +1,8 @@
-package ru.sbrf.lesson_6.Action;
+package ru.sbrf.lesson6.Action;
 
 //интерфейс реализует возможность лазать по деревьям
-public interface ClimbingTrees {
-    public default void ClimbingTrees(){
+public interface Climbing {
+    default void ClimbingTrees(){
         System.out.println("Я залез на дерево");
     }
 }
