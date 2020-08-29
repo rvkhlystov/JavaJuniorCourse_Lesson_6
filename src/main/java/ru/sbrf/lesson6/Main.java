@@ -1,3 +1,4 @@
+//бесполезная строка для создания новой ветки на гите
 package ru.sbrf.lesson6;
 
 import ru.sbrf.lesson6.Animal.Cat;
